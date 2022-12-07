@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		3401CB5529351BE90058054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401CB5429351BE90058054C /* AppDelegate.swift */; };
 		3401CB5729351BE90058054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401CB5629351BE90058054C /* SceneDelegate.swift */; };
-		3401CB5929351BE90058054C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401CB5829351BE90058054C /* ViewController.swift */; };
+		3401CB5929351BE90058054C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401CB5829351BE90058054C /* HomeController.swift */; };
 		3401CB5C29351BE90058054C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3401CB5A29351BE90058054C /* Main.storyboard */; };
 		3401CB5E29351BEC0058054C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3401CB5D29351BEC0058054C /* Assets.xcassets */; };
 		3401CB6129351BEC0058054C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3401CB5F29351BEC0058054C /* LaunchScreen.storyboard */; };
+		340B8DA7293ECB3100CBE0D2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B8DA6293ECB3100CBE0D2 /* DetailsViewController.swift */; };
+		340D376C293FE49D00DC54D9 /* BarberCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */; };
+		340D376D293FE49D00DC54D9 /* BarberCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */; };
+		34B9867A293E51E1003E79E5 /* BarberShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B98679293E51E1003E79E5 /* BarberShopModel.swift */; };
+		34B9867C293E5B25003E79E5 /* BarberShopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9867B293E5B25003E79E5 /* BarberShopManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3401CB5129351BE90058054C /* barber-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "barber-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3401CB5429351BE90058054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3401CB5629351BE90058054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3401CB5829351BE90058054C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3401CB5829351BE90058054C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3401CB5B29351BE90058054C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3401CB5D29351BEC0058054C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3401CB6029351BEC0058054C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3401CB6229351BEC0058054C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340B8DA6293ECB3100CBE0D2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCustomTableViewCell.swift; sourceTree = "<group>"; };
+		340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCustomTableViewCell.xib; sourceTree = "<group>"; };
+		34B98679293E51E1003E79E5 /* BarberShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberShopModel.swift; sourceTree = "<group>"; };
+		34B9867B293E5B25003E79E5 /* BarberShopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberShopManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				3401CB5429351BE90058054C /* AppDelegate.swift */,
 				3401CB5629351BE90058054C /* SceneDelegate.swift */,
-				3401CB5829351BE90058054C /* ViewController.swift */,
+				3401CB5829351BE90058054C /* HomeController.swift */,
+				34B98679293E51E1003E79E5 /* BarberShopModel.swift */,
+				34B9867B293E5B25003E79E5 /* BarberShopManager.swift */,
+				340B8DA6293ECB3100CBE0D2 /* DetailsViewController.swift */,
 				3401CB5A29351BE90058054C /* Main.storyboard */,
 				3401CB5D29351BEC0058054C /* Assets.xcassets */,
 				3401CB5F29351BEC0058054C /* LaunchScreen.storyboard */,
 				3401CB6229351BEC0058054C /* Info.plist */,
+				340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */,
+				340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */,
 			);
 			path = "barber-search";
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			files = (
 				3401CB6129351BEC0058054C /* LaunchScreen.storyboard in Resources */,
 				3401CB5E29351BEC0058054C /* Assets.xcassets in Resources */,
+				340D376D293FE49D00DC54D9 /* BarberCustomTableViewCell.xib in Resources */,
 				3401CB5C29351BE90058054C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3401CB5929351BE90058054C /* ViewController.swift in Sources */,
+				3401CB5929351BE90058054C /* HomeController.swift in Sources */,
+				34B9867C293E5B25003E79E5 /* BarberShopManager.swift in Sources */,
+				34B9867A293E51E1003E79E5 /* BarberShopModel.swift in Sources */,
 				3401CB5529351BE90058054C /* AppDelegate.swift in Sources */,
+				340B8DA7293ECB3100CBE0D2 /* DetailsViewController.swift in Sources */,
+				340D376C293FE49D00DC54D9 /* BarberCustomTableViewCell.swift in Sources */,
 				3401CB5729351BE90058054C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
