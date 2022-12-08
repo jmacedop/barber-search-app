@@ -38,6 +38,9 @@ struct BarberShopManager {
                      "Los Olivos","Lurigancho","Lurín","Magdalena del Mar","Miraflores","Pachacámac","Pucusana","Pueblo Libre","Puente Piedra","Punta Hermosa","Punta Negra","Rímac",
 "San bartolo"]
     
+    let cortesList:[CorteModel] = [CorteModel(nombre: "Fade", descripcion: "Rapado arriba", precio: 15.00),CorteModel(nombre: "Roble", descripcion: "Rapado arriba", precio: 10.00),
+CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00)]
+    
     func listBarberShop(){
         delegate?.listBarbeShop(DidlistBarberShop: barberShopList+barberShopList+barberShopList+barberShopList)
     }
@@ -53,4 +56,5 @@ struct BarberShopManager {
         delegate?.listDistritos(DidDsitritos: distritos)
         
     }
+   
 }

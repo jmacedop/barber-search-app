@@ -14,8 +14,8 @@
             filePath = "barber-search/BarberShopManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "listBarberShop()"
             landmarkType = "7">
          </BreakpointContent>
@@ -145,6 +145,195 @@
             startingLineNumber = "129"
             endingLineNumber = "129"
             landmarkName = "setPopupButtonDroplistDistritos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41F6FF3B-D9FD-4E75-BDAA-BD879D24E1EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/HomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "HomeController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15B7A340-E477-421E-AE50-703309009D25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/CustomCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "CustomCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "15B7A340-E477-421E-AE50-703309009D25 - 26a45b929deb3ae9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "barber_search.CustomCollectionViewCell.__allocating_init(frame: __C.CGRect) -&gt; barber_search.CustomCollectionViewCell"
+                  moduleName = "barber-search"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmacedop/Documents/project-bootcamp/barber-search/barber-search/CustomCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "15B7A340-E477-421E-AE50-703309009D25 - 545ffe494224923b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "barber_search.CustomCollectionViewCell.init(frame: __C.CGRect) -&gt; barber_search.CustomCollectionViewCell"
+                  moduleName = "barber-search"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmacedop/Documents/project-bootcamp/barber-search/barber-search/CustomCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "213">
+               </Location>
+               <Location
+                  uuid = "15B7A340-E477-421E-AE50-703309009D25 - 67e76b762580db7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "barber_search.CustomCollectionViewCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;barber_search.CustomCollectionViewCell&gt;"
+                  moduleName = "barber-search"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmacedop/Documents/project-bootcamp/barber-search/barber-search/CustomCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "15B7A340-E477-421E-AE50-703309009D25 - 7af1b128ccc296c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "barber_search.CustomCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;barber_search.CustomCollectionViewCell&gt;"
+                  moduleName = "barber-search"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmacedop/Documents/project-bootcamp/barber-search/barber-search/CustomCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "15B7A340-E477-421E-AE50-703309009D25 - 3694df7a45babb62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "barber_search.CustomCollectionViewCell.__deallocating_deinit"
+                  moduleName = "barber-search"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jmacedop/Documents/project-bootcamp/barber-search/barber-search/CustomCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50F5D464-3CF3-428F-8279-8298E228DE87"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/CortesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "CortesTableViewCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0A178B3-6EFD-48C8-A7A0-A058CACD7F50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/DetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "configureView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47998D1F-4333-4E38-B9A5-05F540BA39F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/DetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB374EF2-6000-42D2-875C-A5FCA2FFA7BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/DetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC8E3D05-B395-4B6A-BB0D-B880274E6C99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "barber-search/DetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
