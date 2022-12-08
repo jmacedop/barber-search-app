@@ -14,8 +14,12 @@ struct BarberShopModel {
     let distrito: String
     let horario: String
     let imageView: String
+}
 
-    
+struct CorteModel   {
+    let nombre: String
+    let descripcion: String
+    let precio: Double
 }
 
 
