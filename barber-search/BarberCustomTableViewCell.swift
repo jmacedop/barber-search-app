@@ -25,7 +25,7 @@ class BarberCustomTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     func setup(barber: BarberShopModel){
         nombreLabel.text = barber.nombre
         direccionLabel.text = barber.direccion

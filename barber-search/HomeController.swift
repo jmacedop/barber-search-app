@@ -21,6 +21,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    
     var barberShopManager = BarberShopManager()
     var listBarberShoModelList: [BarberShopModel] = []
     var filterNameBarber: [BarberShopModel] = []

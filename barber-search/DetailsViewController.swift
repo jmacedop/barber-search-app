@@ -22,6 +22,7 @@ class DetailsViewController: UIViewController{
     
     var barberShopManager = BarberShopManager()
     var listCortesBarbers: [CorteModel] = []
+    var selectedFilters = [IndexPath]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -66,21 +67,24 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CortesTableViewCell", for: indexPath) as?  CortesTableViewCell {
             cell.setup(corte: lista[indexPath.row])
-            print(lista[indexPath.row])
+            //print(lista[indexPath.row])
         return cell
-    }else {
-        print("Hola")
+        }else {
         return UITableViewCell()
     }
     }
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-         
-         //let barberShop = listBarberShoModelList[indexPath.row]
         
-        performSegue(withIdentifier: "PresentDetailsViewController", sender: nil)
-     }
+        //let barberShop = listBarberShoModelList[indexPath.row]
+        
+        
+        
+        performSegue(withIdentifier: "ReservaViewController", sender: nil)
+        
+    }
+    
     
 }
     
