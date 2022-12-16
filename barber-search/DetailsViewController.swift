@@ -18,7 +18,7 @@ class DetailsViewController: UIViewController{
     
     @IBOutlet weak var horarioLabel: UILabel!
     
-    var barberShopDetail: BarberShopModel?
+    var barberShopDetail: BarbershopEntity?
     
     var barberShopManager = BarberShopManager()
     var listCortesBarbers: [CorteModel] = []

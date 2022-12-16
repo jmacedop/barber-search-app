@@ -1,0 +1,44 @@
+[
+    {
+    "id": 1,
+    "nombre": "BARBERIA FINA",
+    "direccion": "Av. Las flores 8909",
+    "imagen": "ihttps://i.ibb.co/7JNWR0B/barber-a-1.png",
+    "distrito": "Ancon",
+    "horario": "8:00 AM - 10:00 PM"
+    },
+    {
+        "id": 1,
+        "nombre": "LA 50",
+        "direccion": "Av. Las flores 8909",
+        "imagen": "ihttps://i.ibb.co/7JNWR0B/barber-a-1.png",
+        "distrito": "Ate",
+        "horario": "8:00 AM - 10:00 PM"
+    },
+    {
+        "id": 1,
+        "nombre": "NOCHE ES MIA",
+        "direccion": "Av. Las flores 8909",
+        "imagen": "ihttps://i.ibb.co/7JNWR0B/barber-a-1.png",
+        "distrito": "Ate",
+        "horario": "8:00 AM - 10:00 PM"
+    },
+    {
+        "id": 1,
+        "nombre": "EL AYUNO",
+        "direccion": "Av. Las flores 8909",
+        "imagen": "ihttps://i.ibb.co/7JNWR0B/barber-a-1.png",
+        "distrito": "Ate",
+        "horario": "8:00 AM - 10:00 PM"
+    },
+    {
+        "id": 1,
+        "nombre": "SALVADOR 90",
+        "direccion": "Av. Las flores 8909",
+        "imagen": "ihttps://i.ibb.co/7JNWR0B/barber-a-1.png",
+        "distrito": "Ancon",
+        "horario": "8:00 AM - 10:00 PM"
+    }
+]
+
+

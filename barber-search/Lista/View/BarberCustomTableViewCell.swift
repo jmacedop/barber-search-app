@@ -26,7 +26,7 @@ class BarberCustomTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setup(barber: BarberShopModel){
+    func setup(barber: BarbershopEntity){
         nombreLabel.text = barber.nombre
         direccionLabel.text = barber.direccion
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34007741294A76D800ADD3FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 34007740294A76D800ADD3FC /* Alamofire */; };
+		34007744294A832C00ADD3FC /* BarbershopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34007743294A832C00ADD3FC /* BarbershopResponse.swift */; };
+		34007746294ABC4C00ADD3FC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34007745294ABC4C00ADD3FC /* SplashViewController.swift */; };
 		340160E22947B05E00DAFA21 /* ReservaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340160E12947B05E00DAFA21 /* ReservaViewController.swift */; };
 		340160E72947B21F00DAFA21 /* BarberosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340160E52947B21F00DAFA21 /* BarberosTableViewCell.swift */; };
 		340160E82947B21F00DAFA21 /* BarberosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340160E62947B21F00DAFA21 /* BarberosTableViewCell.xib */; };
@@ -20,6 +22,15 @@
 		340D376C293FE49D00DC54D9 /* BarberCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */; };
 		340D376D293FE49D00DC54D9 /* BarberCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */; };
 		34234153294160CB0072F1B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3401CB5A29351BE90058054C /* Main.storyboard */; };
+		348ADB5A294AED2400AAF9F8 /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB59294AED2400AAF9F8 /* NetWorking.swift */; };
+		348ADB60294B043500AAF9F8 /* barbershop_succes_01.json in Resources */ = {isa = PBXBuildFile; fileRef = 348ADB5F294B043500AAF9F8 /* barbershop_succes_01.json */; };
+		348ADB67294B602A00AAF9F8 /* ListaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB66294B602A00AAF9F8 /* ListaInteractor.swift */; };
+		348ADB6B294B61D000AAF9F8 /* ListaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB6A294B61D000AAF9F8 /* ListaPresenter.swift */; };
+		348ADB6D294B715600AAF9F8 /* ConfigurationListHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB6C294B715600AAF9F8 /* ConfigurationListHome.swift */; };
+		348ADB6F294B904200AAF9F8 /* ListaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB6E294B904200AAF9F8 /* ListaRouter.swift */; };
+		348ADB73294B984400AAF9F8 /* BarbershopEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB72294B984400AAF9F8 /* BarbershopEntity.swift */; };
+		348ADB77294BC43D00AAF9F8 /* district_succes_01.json in Resources */ = {isa = PBXBuildFile; fileRef = 348ADB76294BC43D00AAF9F8 /* district_succes_01.json */; };
+		348ADB79294BC52600AAF9F8 /* DistritoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348ADB78294BC52600AAF9F8 /* DistritoEntity.swift */; };
 		349750D429416FAE00BB4A34 /* CortesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349750D229416FAE00BB4A34 /* CortesTableViewCell.swift */; };
 		349750D529416FAE00BB4A34 /* CortesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349750D329416FAE00BB4A34 /* CortesTableViewCell.xib */; };
 		34B9867A293E51E1003E79E5 /* BarberShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B98679293E51E1003E79E5 /* BarberShopModel.swift */; };
@@ -27,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34007743294A832C00ADD3FC /* BarbershopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarbershopResponse.swift; sourceTree = "<group>"; };
+		34007745294ABC4C00ADD3FC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		340160E12947B05E00DAFA21 /* ReservaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaViewController.swift; sourceTree = "<group>"; };
 		340160E52947B21F00DAFA21 /* BarberosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberosTableViewCell.swift; sourceTree = "<group>"; };
 		340160E62947B21F00DAFA21 /* BarberosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberosTableViewCell.xib; sourceTree = "<group>"; };
@@ -41,6 +54,15 @@
 		340B8DA6293ECB3100CBE0D2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCustomTableViewCell.swift; sourceTree = "<group>"; };
 		340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCustomTableViewCell.xib; sourceTree = "<group>"; };
+		348ADB59294AED2400AAF9F8 /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
+		348ADB5F294B043500AAF9F8 /* barbershop_succes_01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = barbershop_succes_01.json; sourceTree = "<group>"; };
+		348ADB66294B602A00AAF9F8 /* ListaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaInteractor.swift; sourceTree = "<group>"; };
+		348ADB6A294B61D000AAF9F8 /* ListaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPresenter.swift; sourceTree = "<group>"; };
+		348ADB6C294B715600AAF9F8 /* ConfigurationListHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationListHome.swift; sourceTree = "<group>"; };
+		348ADB6E294B904200AAF9F8 /* ListaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRouter.swift; sourceTree = "<group>"; };
+		348ADB72294B984400AAF9F8 /* BarbershopEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarbershopEntity.swift; sourceTree = "<group>"; };
+		348ADB76294BC43D00AAF9F8 /* district_succes_01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = district_succes_01.json; sourceTree = "<group>"; };
+		348ADB78294BC52600AAF9F8 /* DistritoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoEntity.swift; sourceTree = "<group>"; };
 		349750D229416FAE00BB4A34 /* CortesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CortesTableViewCell.swift; sourceTree = "<group>"; };
 		349750D329416FAE00BB4A34 /* CortesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CortesTableViewCell.xib; sourceTree = "<group>"; };
 		34B98679293E51E1003E79E5 /* BarberShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberShopModel.swift; sourceTree = "<group>"; };
@@ -59,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34007742294A830900ADD3FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34007743294A832C00ADD3FC /* BarbershopResponse.swift */,
+				348ADB5F294B043500AAF9F8 /* barbershop_succes_01.json */,
+				348ADB76294BC43D00AAF9F8 /* district_succes_01.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3401CB4829351BE90058054C = {
 			isa = PBXGroup;
 			children = (
@@ -78,25 +110,90 @@
 		3401CB5329351BE90058054C /* barber-search */ = {
 			isa = PBXGroup;
 			children = (
+				348ADB61294B5F1B00AAF9F8 /* Lista */,
+				348ADB58294AED0700AAF9F8 /* Extras */,
+				34007742294A830900ADD3FC /* Resources */,
 				3401CB5429351BE90058054C /* AppDelegate.swift */,
 				3401CB5629351BE90058054C /* SceneDelegate.swift */,
-				3401CB5829351BE90058054C /* HomeController.swift */,
 				34B98679293E51E1003E79E5 /* BarberShopModel.swift */,
 				34B9867B293E5B25003E79E5 /* BarberShopManager.swift */,
-				340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */,
-				340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */,
 				340B8DA6293ECB3100CBE0D2 /* DetailsViewController.swift */,
 				349750D229416FAE00BB4A34 /* CortesTableViewCell.swift */,
 				349750D329416FAE00BB4A34 /* CortesTableViewCell.xib */,
 				340160E12947B05E00DAFA21 /* ReservaViewController.swift */,
 				340160E52947B21F00DAFA21 /* BarberosTableViewCell.swift */,
 				340160E62947B21F00DAFA21 /* BarberosTableViewCell.xib */,
+				34007745294ABC4C00ADD3FC /* SplashViewController.swift */,
+				348ADB6C294B715600AAF9F8 /* ConfigurationListHome.swift */,
 				3401CB5A29351BE90058054C /* Main.storyboard */,
 				3401CB5D29351BEC0058054C /* Assets.xcassets */,
 				3401CB5F29351BEC0058054C /* LaunchScreen.storyboard */,
 				3401CB6229351BEC0058054C /* Info.plist */,
 			);
 			path = "barber-search";
+			sourceTree = "<group>";
+		};
+		348ADB58294AED0700AAF9F8 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB59294AED2400AAF9F8 /* NetWorking.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		348ADB61294B5F1B00AAF9F8 /* Lista */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB71294B982800AAF9F8 /* Entity */,
+				348ADB65294B5FA000AAF9F8 /* Router */,
+				348ADB64294B5F9200AAF9F8 /* Interactor */,
+				348ADB63294B5F8300AAF9F8 /* View */,
+				348ADB62294B5F6600AAF9F8 /* Presenter */,
+			);
+			path = Lista;
+			sourceTree = "<group>";
+		};
+		348ADB62294B5F6600AAF9F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB6A294B61D000AAF9F8 /* ListaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		348ADB63294B5F8300AAF9F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3401CB5829351BE90058054C /* HomeController.swift */,
+				340D376A293FE49D00DC54D9 /* BarberCustomTableViewCell.swift */,
+				340D376B293FE49D00DC54D9 /* BarberCustomTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		348ADB64294B5F9200AAF9F8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB66294B602A00AAF9F8 /* ListaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		348ADB65294B5FA000AAF9F8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB6E294B904200AAF9F8 /* ListaRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		348ADB71294B982800AAF9F8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				348ADB72294B984400AAF9F8 /* BarbershopEntity.swift */,
+				348ADB78294BC52600AAF9F8 /* DistritoEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +262,8 @@
 			files = (
 				3401CB6129351BEC0058054C /* LaunchScreen.storyboard in Resources */,
 				349750D529416FAE00BB4A34 /* CortesTableViewCell.xib in Resources */,
+				348ADB77294BC43D00AAF9F8 /* district_succes_01.json in Resources */,
+				348ADB60294B043500AAF9F8 /* barbershop_succes_01.json in Resources */,
 				3401CB5E29351BEC0058054C /* Assets.xcassets in Resources */,
 				340D376D293FE49D00DC54D9 /* BarberCustomTableViewCell.xib in Resources */,
 				34234153294160CB0072F1B0 /* Main.storyboard in Resources */,
@@ -179,15 +278,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34007744294A832C00ADD3FC /* BarbershopResponse.swift in Sources */,
 				3401CB5929351BE90058054C /* HomeController.swift in Sources */,
+				348ADB6B294B61D000AAF9F8 /* ListaPresenter.swift in Sources */,
+				348ADB6D294B715600AAF9F8 /* ConfigurationListHome.swift in Sources */,
+				348ADB67294B602A00AAF9F8 /* ListaInteractor.swift in Sources */,
 				340160E72947B21F00DAFA21 /* BarberosTableViewCell.swift in Sources */,
+				34007746294ABC4C00ADD3FC /* SplashViewController.swift in Sources */,
 				34B9867C293E5B25003E79E5 /* BarberShopManager.swift in Sources */,
 				34B9867A293E51E1003E79E5 /* BarberShopModel.swift in Sources */,
 				3401CB5529351BE90058054C /* AppDelegate.swift in Sources */,
 				340B8DA7293ECB3100CBE0D2 /* DetailsViewController.swift in Sources */,
 				340D376C293FE49D00DC54D9 /* BarberCustomTableViewCell.swift in Sources */,
+				348ADB5A294AED2400AAF9F8 /* NetWorking.swift in Sources */,
+				348ADB6F294B904200AAF9F8 /* ListaRouter.swift in Sources */,
 				3401CB5729351BE90058054C /* SceneDelegate.swift in Sources */,
 				349750D429416FAE00BB4A34 /* CortesTableViewCell.swift in Sources */,
+				348ADB73294B984400AAF9F8 /* BarbershopEntity.swift in Sources */,
+				348ADB79294BC52600AAF9F8 /* DistritoEntity.swift in Sources */,
 				340160E22947B05E00DAFA21 /* ReservaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
