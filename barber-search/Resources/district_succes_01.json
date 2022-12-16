@@ -1,0 +1,130 @@
+[
+    {
+        "id": 0,
+        "nombre": "Todos los distritos"
+    },
+    {
+        "id": 1,
+        "nombre": "Ancon"
+    },
+    {
+        "id": 2,
+        "nombre": "Ate"
+    },
+    {
+        "id": 3,
+        "nombre": "Ancon"
+    },
+    {
+        "id": 4,
+        "nombre": "Barranco"
+    },
+    {
+        "id": 5,
+        "nombre": "Breña"
+    },
+    {
+        "id": 6,
+        "nombre": "Carabayllo"
+    },
+    {
+        "id": 7,
+        "nombre": "Cercado de Lima"
+    },
+    {
+        "id": 8,
+        "nombre": "Chaclacayo"
+    },
+    {
+        "id": 9,
+        "nombre": "Chorrillos"
+    },
+    {
+        "id": 10,
+        "nombre": "Cieneguilla"
+    },
+    {
+        "id": 11,
+        "nombre": "Comas"
+    },
+    {
+        "id": 12,
+        "nombre": "El Agustino"
+    },
+    {
+        "id": 13,
+        "nombre": "Independencia"
+    },
+    {
+        "id": 14,
+        "nombre": "Jesús María"
+    },
+    {
+        "id": 15,
+        "nombre": "La Molina"
+    },
+    {
+        "id": 16,
+        "nombre": "La Victoria"
+    },
+    {
+        "id": 17,
+        "nombre": "Lince"
+    },
+    {
+        "id": 18,
+        "nombre": "Los Olivos"
+    },
+    {
+        "id": 19,
+        "nombre": "La Victoria"
+    },
+    {
+        "id": 20,
+        "nombre": "Lurigancho"
+    },
+    {
+        "id": 21,
+        "nombre": "Lurín"
+    },
+    {
+        "id": 22,
+        "nombre": "Magdalena del Mar"
+    },
+    {
+        "id": 23,
+        "nombre": "La Miraflores"
+    },
+    {
+        "id": 24,
+        "nombre": "Pachacámac"
+    },
+    {
+        "id": 25,
+        "nombre": "Pucusuna"
+    },
+    {
+        "id": 26,
+        "nombre": "Pueblo Libre"
+    },
+    {
+        "id": 27,
+        "nombre": "Puente Piedra"
+    },
+    {
+        "id": 28,
+        "nombre": "Punta Hermosa"
+    },
+    {
+        "id": 29,
+        "nombre": "Punta Negra"
+    },
+    {
+        "id": 30,
+        "nombre": "Rímac"
+    },
+    {
+        "id": 31,
+        "nombre": "San Bartolo"
+    }
+]
