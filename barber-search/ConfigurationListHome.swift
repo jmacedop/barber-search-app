@@ -16,13 +16,10 @@ class ConfigurationListHome {
         let api = BarbershopMocksAPI()
         let interactor = ListaInteractor(presenter: presenter, api: api )
         
-        
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "HomeController") as! HomeController
         
-        let router = ListaRouter()
-        router.presenter = presenter
+        let router = ListaRouter(presenter: presenter)
         router.view = view
         
         presenter.router = router

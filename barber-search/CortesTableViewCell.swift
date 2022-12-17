@@ -23,7 +23,7 @@ class CortesTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setup(corte: CorteModel){
+    func setup(corte: CorteEntity){
         nombreLabel?.text = corte.nombre
         descripcionLabel?.text = corte.descripcion
         precioLabel?.text = String(corte.precio)

@@ -21,13 +21,13 @@ class DetailsViewController: UIViewController{
     var barberShopDetail: BarbershopEntity?
     
     var barberShopManager = BarberShopManager()
-    var listCortesBarbers: [CorteModel] = []
+    var listCortesBarbers: [CorteEntity] = []
     var selectedFilters = [IndexPath]()
     
     @IBOutlet weak var tableView: UITableView!
     
-    let lista:[CorteModel] = [CorteModel(nombre: "Fade", descripcion: "Rapado arriba", precio: 15.00),CorteModel(nombre: "Roble", descripcion: "Rapado arriba", precio: 10.00),
-CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteModel(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00)]
+    let lista:[CorteEntity] = [CorteEntity(nombre: "Fade", descripcion: "Rapado arriba", precio: 15.00),CorteEntity(nombre: "Roble", descripcion: "Rapado arriba", precio: 10.00),
+                               CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00),CorteEntity(nombre: "Militar", descripcion: "Rapado arriba", precio: 30.00)]
     
     
     override func viewDidLoad() {
@@ -68,6 +68,7 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CortesTableViewCell", for: indexPath) as?  CortesTableViewCell {
             cell.setup(corte: lista[indexPath.row])
             //print(lista[indexPath.row])
+            
         return cell
         }else {
         return UITableViewCell()
@@ -77,15 +78,25 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
-        //let barberShop = listBarberShoModelList[indexPath.row]
+        let corteEntity = lista[indexPath.row]
         
-        
-        
-        performSegue(withIdentifier: "ReservaViewController", sender: nil)
+        performSegue(withIdentifier: "ReservaViewController", sender: corteEntity)
         
     }
     
     
 }
     
-
+extension DetailsViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        if segue.identifier == "ReservaViewController"{
+            if let vcDestinoDetails = segue.destination as? ReservaViewController {
+                if let corte = sender as? CorteEntity {
+                    vcDestinoDetails.cortedetail = corte
+                }
+            }
+        }
+    }
+}

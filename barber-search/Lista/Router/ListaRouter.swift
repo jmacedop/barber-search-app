@@ -10,18 +10,21 @@ import UIKit
 
 
 protocol ListaRouterProtocol{
-    func hola()
-    func mostrar(_ barber: BarbershopEntity)
+    func mostrar(_ barber: [BarbershopEntity])
 }
 
 class ListaRouter: ListaRouterProtocol{
-    func mostrar(_ barber: BarbershopEntity) {
+  
+let presenter: ListaPresenterProtocol?
+    
+
+    func mostrar(_ barber: [BarbershopEntity]) {
+        
     }
     
-    var view: UIViewController?
-    var presenter: ListaPresenterProtocol?
+    weak var view: UIViewController?
     
-    func hola() {
-        
+    required init(presenter: ListaPresenterProtocol) {
+        self.presenter = presenter
     }
 }

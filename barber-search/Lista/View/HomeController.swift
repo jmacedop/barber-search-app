@@ -26,19 +26,26 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func verTodosButton(_ sender: UIButton) {
        // barberShopManager.listBarberShop()
+        presenter?.getBarberos()
+        
+    }
+    private var barberosList = [BarbershopEntity]()
+    private var distritotsList = [DistritoEntity]()
+    //llamo a mi presenter
+    var presenter: ListaPresenterProtocol?
+    var filterNameBarber: [BarbershopEntity] = []
+    //var listDistritosHome: [District] = []
+
+    @IBAction func menuButton(_ sender: Any) {
+        
+       
         
     }
     
-    private var barberosList = [BarbershopEntity]()
-    private var distritotsList = [DistritoEntity]()
     
-    //llamo a mi presenter
-    var presenter: ListaPresenterProtocol?
     
-    //var barberShopManager = BarberShopManager()
-    //var listBarberShoModelList: [BarberShopModel] = []
-    var filterNameBarber: [BarbershopEntity] = []
-    //var listDistritosHome: [District] = []
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +63,6 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         presenter?.getBarberos()
         presenter?.getDistritos()
-        setPopupButtonDroplistDistritos()
     }
     
     
@@ -88,6 +94,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
 }
 
 extension HomeController: ListaHomeViewControllerProtocol{
+    
     func datosBarberiaByDistrito(_ barberia: [BarbershopEntity]) {
         barberosList = barberia
         tableView.reloadData()
@@ -95,15 +102,16 @@ extension HomeController: ListaHomeViewControllerProtocol{
     
     func datosDistrito(_ distrito: [DistritoEntity]) {
         distritotsList = distrito
-        print(distritotsList)
+        setPopupButtonDroplistDistritos()
+  
+        
     }
     
     func datosBarbero(_ barber: [BarbershopEntity]) {
         barberosList = barber
-        print(barberosList)
+        tableView.reloadData()
+        //print(barberosList)
     }
-    
-    
 }
 
 extension HomeController{
@@ -114,13 +122,12 @@ extension HomeController{
           self.presenter?.getBarberiasByDistritos(action.title)
         }
         var optionsArray = [UIAction]()
-        
         for data in distritotsList{
             let action = UIAction(title:(data.nombre), state: .off, handler: optionClosure)
             optionsArray.append(action)
         }
         optionsArray[0].state = .on
-        let optionsMenu = UIMenu(title: "", options: .displayInline, children: optionsArray)
+                let optionsMenu = UIMenu(title: "", options: .displayInline, children: optionsArray)
         
         buttonListDistritos.menu = optionsMenu
         buttonListDistritos.changesSelectionAsPrimaryAction = true

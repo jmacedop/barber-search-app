@@ -26,18 +26,6 @@
                                 <rect key="frame" x="0.0" y="709" width="393" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLp-Xa-2Hg">
-                                        <rect key="frame" x="41" y="49" width="297" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" name="AccentColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Iniciar como Invitado">
-                                            <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="holaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8z-EL-rt1"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT8-lz-g9c">
                                         <rect key="frame" x="48" y="145" width="297" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,11 +34,11 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Iniciar sesión"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gna-mz-Q8e">
-                                        <rect key="frame" x="41" y="-11" width="297" height="43"/>
+                                        <rect key="frame" x="48" y="8" width="297" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Inicar sesión">
+                                        <buttonConfiguration key="configuration" style="filled" title="Empezar">
                                             <color key="baseBackgroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -60,14 +48,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <rect key="contentStretch" x="0.75" y="0.0" width="1" height="1"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="vLp-Xa-2Hg"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ahorra tiempo y reserva en las barberias más cercanas de tu distrito" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD4-iO-r7c">
-                                <rect key="frame" x="48" y="604" width="297" height="79"/>
+                                <rect key="frame" x="48" y="622" width="297" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -127,7 +110,7 @@
                                     <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="medium"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="dropButtonList:" destination="LWp-Hh-VAR" eventType="touchUpInside" id="VJg-f8-QFc"/>
+                                    <action selector="menuButton:" destination="LWp-Hh-VAR" eventType="touchUpInside" id="h2l-jr-4cx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-Jh-1Ez">
@@ -617,9 +600,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wyi-RR-x7j">
-                        <barButtonItem key="rightBarButtonItem" title="Reservar" id="zsU-mx-h42"/>
+                        <barButtonItem key="rightBarButtonItem" title="Reservar" id="zsU-mx-h42">
+                            <connections>
+                                <action selector="reservarButton:" destination="HUK-fq-Bjx" id="7y4-ed-FAF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="corteLabel" destination="JYg-Eu-ZtS" id="eZX-Jo-d3O"/>
+                        <outlet property="descripcionLabel" destination="CcE-iw-ygs" id="dsW-Ac-9e1"/>
+                        <outlet property="precioLabel" destination="GId-j3-uJE" id="mS4-lr-1hl"/>
                         <outlet property="tableView" destination="GQp-Cq-cey" id="8dK-bY-mgW"/>
                     </connections>
                 </viewController>

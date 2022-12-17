@@ -13,8 +13,46 @@ class ReservaViewController: UIViewController {
     var lista:[String] = ["Michael Mac", "Lucas Moy", "Rodrigo de Paul", "Fernanzo Zamora", "Martin Palermo", "Federico Valderrama"]
     var checked: String = ""
     
+    
+    var cortedetail: CorteEntity?
+    
     @IBOutlet weak var tableView: UITableView!
     let barberosCustom = BarberosTableViewCell()
+    
+    
+    
+    
+    @IBAction func reservarButton(_ sender: UIBarButtonItem) {
+        print(cortedetail?.nombre ?? "")
+        
+        // create the alert
+        let alert = UIAlertController(title: "Reserva exitosa", message: "Corte de cabello:" + (cortedetail?.nombre ?? ""), preferredStyle: UIAlertController.Style.alert)
+
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+                    
+                    // do something like...
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let view = storyboard.instantiateViewController(withIdentifier: "HomeController") as! HomeController
+                    
+                    
+                    self.navigationController?.popToRootViewController(animated: true)
+                    
+
+                }))
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    @IBOutlet weak var corteLabel: UILabel!
+    
+    @IBOutlet weak var descripcionLabel: UILabel!
+    
+    @IBOutlet weak var precioLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +71,9 @@ class ReservaViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         //barberosCustom.delegate = self
+        precioLabel?.text = String(cortedetail?.precio ?? 0.0)
+        corteLabel?.text = cortedetail?.nombre
+        descripcionLabel?.text = cortedetail?.descripcion
         
     }
 
@@ -65,13 +106,6 @@ extension ReservaViewController: UITableViewDataSource, UITableViewDelegate {
             print(nombre ?? "")
             
             //var selectedIndex: IndexPath!
-            
-            
-            
-            
-            
-            
-            
             
         return cell
         }else {
@@ -115,3 +149,5 @@ extension ReservaViewController: UITableViewDataSource, UITableViewDelegate {
     }*/
     
 //}
+
+

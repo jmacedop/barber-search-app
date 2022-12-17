@@ -18,7 +18,7 @@ struct BarberShopModel {
     
 }
 
-struct CorteModel   {
+struct CorteEntity   {
     let nombre: String
     let descripcion: String
     let precio: Double

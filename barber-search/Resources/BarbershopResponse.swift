@@ -52,8 +52,8 @@ struct DistritoResponse: Decodable {
     let nombre: String
     
     enum CodingKeys: String, CodingKey {
-        case id
-        case nombre
+        case id = "id"
+        case nombre = "nombre"
     }
 }
 
