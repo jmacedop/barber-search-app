@@ -15,4 +15,6 @@ struct DistritoEntity{
     static func make(_ distritos: [DistritoResponse]) -> [DistritoEntity] {
         return distritos.map({ DistritoEntity(id: $0.id, nombre: $0.nombre) })
     }
+    
+    
 }

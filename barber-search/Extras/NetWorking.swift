@@ -10,45 +10,58 @@ import Alamofire
 
 
 protocol RemoteRepository {
-    func fetchBarbers() -> [BarbershopResponse]
-    func fetchDistritos() -> [DistritoResponse]
     
-    func fetchBarberByDistrito() -> [BarbershopResponse]
+    func fetchBarbers(completion: @escaping ([BarbershopResponse]?) -> Void)
+    func fetchDistritos(completion: @escaping ([DistritoResponse]?) -> Void)
+    //func fetchbBarbershopByDistritos(completion: @escaping ([DistritoResponse]?) -> Void)
 }
 //salida a APIS
 //la implementación puede variar
 
 
-class BarbershopMocksAPI: RemoteRepository {
-    func fetchDistritos() -> [DistritoResponse] {
-        let resource = "district_succes_01"
-        
-        //si encuentras el recurso lo guardas en la variable URL
-        if let url = Bundle.main.url(forResource: resource, withExtension: "json"){
-            
-            //try retorna un tipo de error
-            do{
-                //si se obtiene el valor la variable se guarda en data
-                let data = try Data(contentsOf: url)
-                
-                /// API REAL
-                let decoder = JSONDecoder()
-                let result = try decoder.decode([DistritoResponse].self, from: data)
-                return result
-            }catch let error {
-                print(error)
-                
-            }
-            
-        }
-           
-        
-        return []
+class BarbershopExternalAPI: RemoteRepository {
+    
+    func fetchDistritos(completion: @escaping ([DistritoResponse]?) -> Void) {
+        let urlString = "http://localhost:3000/districts"
+                AF.request(urlString).response { response in
+                    guard let data = response.data else { return }
+                    do {
+                        let decoder = JSONDecoder()
+                        let distritosRequest = try decoder.decode([DistritoResponse].self, from: data)
+                        completion(distritosRequest)
+                        print("hola carajo")
+                    } catch let error {
+                        print(error)
+                        completion(nil)
+                    }
+                }
     }
     
-
     
-    func fetchBarbers() ->  [BarbershopResponse]{
+
+    func fetchBarbers(completion: @escaping ([BarbershopResponse]?) -> Void) {
+        
+        let urlString = "http://localhost:3000/barbershops"
+                AF.request(urlString).response { response in
+                    guard let data = response.data else { return }
+                    do {
+                        let decoder = JSONDecoder()
+                        let barbershopRequest = try decoder.decode([BarbershopResponse].self, from: data)
+                        completion(barbershopRequest)
+                    } catch let error {
+                        print(error)
+                        completion(nil)
+                    }
+                }
+        }
+    
+    
+}
+
+//los mismos métodos pueden tener diferente implementación
+class BarbershopMocksAPI: RemoteRepository{
+    
+    func fetchBarbers(completion: @escaping ([BarbershopResponse]?) -> Void) {
         
         let resource = "barbershop_succes_01"
         
@@ -63,78 +76,40 @@ class BarbershopMocksAPI: RemoteRepository {
                 /// API REAL
                 let decoder = JSONDecoder()
                 let result = try decoder.decode([BarbershopResponse].self, from: data)
-                return result
+                completion(result)
             }catch let error {
                 print(error)
                 
             }
             
         }
-           
+    }
+    
+    func fetchDistritos(completion: @escaping ([DistritoResponse]?) -> Void) {
         
-        return []
-    }
-    
-    func fetchBarberByDistrito() ->  [BarbershopResponse]{
-        []
-    }
-    
-}
-
-//los mismos métodos pueden tener diferente implementación
-class BarbershopExternalAPI: RemoteRepository {
-    func fetchDistritos() -> [DistritoResponse] {
-        return []
-    }
-    
-    
-    func fetchBarbers() ->  [BarbershopResponse]{
-        //let resource = "barbershop_succes_01"
-        /*var barberResult = [BarbershopResponse]()
+        let resource = "district_succes_01"
+        
         //si encuentras el recurso lo guardas en la variable URL
-        // Creamos una instancia de URLsession para realizar peticiones HTTP
-        let session = URLSession.shared
-
-        // Creamos la URL que apunta a la API que queremos consumir
-        let url = URL(string: "http://localhost:3000/barbershops")!
-
-        // Creamos una solicitud HTTP para obtener la información del usuario
-        let request = URLRequest(url: url)
-
-        // Creamos una tarea de red para realizar la solicitud HTTP en segundo plano
-        let task = session.dataTask(with: request) { data, response, error in
-            // Verificamos si se produjo un error
-            if let error = error {
-                // Mostramos un mensaje al usuario y salimos del bloque
-                print("Error: \(error)")
-                barberResult =  []
-            }
-
-            // Si no hubo error, procesamos los datos devueltos por la API
-            if let data = data {
-                // Intentamos decodificabarberResultr el JSON en un objeto User
+        if let url = Bundle.main.url(forResource: resource, withExtension: "json"){
+            
+            //try retorna un tipo de error
+            do{
+                //si se obtiene el valor la variable se guarda en data
+                let data = try Data(contentsOf: url)
+                
+                /// API REAL
                 let decoder = JSONDecoder()
-                do {
-                    let dataBarbershop = try decoder.decode([BarbershopResponse].self, from: data)
-                    // Si el JSON se decodificó correctamente, mostramos la información del usuario
-                    //listaBarberias = dataBarbershop.barbershops!
-                    barberResult = dataBarbershop
-                } catch {
-                    // Si hubo un error al decodificar el JSON, mostramos un mensaje de error
-                    print("Error: \(error.localizedDescription)")
-                }
+                let result = try decoder.decode([DistritoResponse].self, from: data)
+                print("hola papi", result)
+                completion(result)
+            }catch let error {
+                print(error)
+                
             }
+            
         }
-
-        // Iniciamos la tarea de red para consumir la API
-        task.resume()
-        
-        return barberResult*/
-        return []
-    }
-    
-    func fetchBarberByDistrito() ->  [BarbershopResponse]{
-        []
     }
     
 }
+
+

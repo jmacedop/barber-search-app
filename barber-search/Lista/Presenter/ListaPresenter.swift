@@ -8,16 +8,15 @@
 import Foundation
 
 protocol ListaPresenterProtocol{
-    func getData()
     func mostrarListaBarberos(barberos: [BarbershopEntity])
     func mostrarListaDistritos(distritos: [DistritoEntity])
     func mostrarListaBarberiasByDistrito(barberias:  [BarbershopEntity])
     
-    func hola()
+   
     //error view router
     //func presentErrorView()
     
-    //cosas que el router -> presenter
+    //cosas que el router pide al-> presenter
     
     //cosas que el presenter pide al interactor
     func getBarberos()
@@ -28,7 +27,6 @@ protocol ListaPresenterProtocol{
 
 class ListaPresenter: ListaPresenterProtocol{
     
-
     func mostrarListaDistritos(distritos: [DistritoEntity]) {
         view?.datosDistrito(distritos)
     }
@@ -62,7 +60,4 @@ class ListaPresenter: ListaPresenterProtocol{
         print("Hola soy el presenter")
     }
     
-    func hola() {
-        router?.hola()
-    }
 }
